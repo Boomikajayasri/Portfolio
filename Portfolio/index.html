@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/da82d8a14c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>     
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Boomikajayasri</span> <br> </h1>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profileicon.png" width="400px" height="400px" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m <strong><span>Boomikajayasri</span> </strong>, a B.Tech IT student passionate about frontend development and technology. I enjoy designing and building responsive, dynamic web interfaces that enhance user experiences. With a focus on learning and growth, I’m committed to mastering modern tools and frameworks to excel in the field of IT.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br>Web Development</li>
+                            <li><span>CSS</span><br>Web Development</li>
+                            <li><span>Python</span><br>Programming Language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br> Undergraduate (B.Tech III year) in Velammal Institut of Technology, TamilNadu.</li>
+                            <li><span>2022</span><br>12th grade in Balakrishna Matric Hr. Sec. School, TamilNadu.</li>
+                            <li><span>2020</span><br>10th grade in Balakrishna Matric Hr. Sec. School, TamilNadu.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------- my services------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually appealing and user-friendly websites that deliver seamless experiences. From responsive layouts to intuitive designs, I create websites that align with your goals and captivate your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> App Design</h2>
+                    <p>I specialize in creating visually appealing and user-friendly app designs that prioritize seamless user experiences. From wireframes to high-fidelity prototypes, I craft designs tailored to meet specific needs and ensure a smooth journey for users. My focus is on delivering innovative and intuitive interfaces that enhance functionality and aesthetics.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------Portfolio------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weather.jpg" width="300px" height="400px">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A responsive weather app displaying real-time conditions with dynamic backgrounds using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.jpg" width="300px" height="400px">
+                    <div class="layer">
+                        <h3>To-Do List App</h3>
+                        <p>A simple to-do list app for task management, built using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/voice.jpg" width="300px" height="400px">
+                    <div class="layer">
+                        <h3>Text to Speech Converter App</h3>
+                        <p>A text-to-speech converter app converting written text into speech using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------------------contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>boomikajayasri3@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8531942598</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/boomikajayasri/"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright @2024 Designed by Boomikajayasri<i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink  of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent  of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+      
+
+
+
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZ2JRLKCEPX3VdoAjP0vvLQ2AY55H37aIAhOh-kwU31wpeKsurnjIsFBYS9e1I2oWT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  
+    
+</body>
+</html>
